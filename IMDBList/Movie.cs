@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace IMDBList
 {
-    public class Film
+    public class Movie
     {
-        public double Score { get; set; }
         public string Name { get; set; }
+        public double Score { get; set; }
     }
 }

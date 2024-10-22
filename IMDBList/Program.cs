@@ -4,47 +4,47 @@
     {
         static void Main(string[] args)
         {
-            List<Film> films = new List<Film>();
+            List<Movie> movies = new List<Movie>();  // create a new list for movies
 
-            // Adding films to the list
+            // adding films to the list
             while (true)
             {
-                Console.Write("Film ismini giriniz: ");
+                Console.Write("Film ismini giriniz: "); // get movie name
                 string name = Console.ReadLine();
 
-                Console.Write("IMDb puanını giriniz: ");
+                Console.Write("IMDb puanını giriniz: "); // get movie imdb score
                 double imdbScore;
 
-                // IMDb puanını başarılı şekilde alana kadar soralım
+                // ask until get the IMDb score successfully
                 while (!double.TryParse(Console.ReadLine(), out imdbScore))
                 {
                     Console.Write("Geçerli bir IMDb puanı giriniz: ");
                 }
 
-                // Adding the film and its IMDb rating to the list
-                films.Add(new Film { Name = name, Score = imdbScore });
+                // adding the movie and its IMDb rating to the list
+                movies.Add(new Movie { Name = name, Score = imdbScore });
 
                 string answer;
 
                 while (true)
                 {
-                    Console.WriteLine("Yeni bir film eklemek istiyor musunuz?");
+                    Console.WriteLine("Yeni bir film eklemek istiyor musunuz?"); 
                     answer = Console.ReadLine().ToLower();
 
-                    if (answer == "evet")
+                    if (answer == "evet") // if user wants to add new movies
                     {
                         break;
                     }
-                    else if (answer == "hayir")
+                    else if (answer == "hayir") // if user does not want to add new movies
                     {
-                        ListFilm(films);
-                        ShowByScoreRange(films, 4.0, 9.0);
-                        ShowByFirstLetter(films, "A");
+                        ListFilm(movies); // list movies
+                        ShowByScoreRange(movies, 4.0, 9.0); // list movies with imdb score between 4 and 9
+                        ShowByFirstLetter(movies, "A"); // list the movie names starting with "A"
                         return;
                     }
                     else
                     {
-                        Console.WriteLine("Lutfen 'evet' veya 'hayir' giriniz!");
+                        Console.WriteLine("Lutfen 'evet' veya 'hayir' giriniz!"); // if user do not enter 'evet' or 'hayir'
                     }
                 }
 
@@ -52,35 +52,37 @@
 
         }
 
-        static void ListFilm(List<Film> films)
+        static void ListFilm(List<Movie> movies)  // movie list method
         {
             Console.WriteLine("Film Listesi:");
-            foreach (var film in films)
+            foreach (var movie in movies)
             {
-                Console.WriteLine($"Film: {film.Name}, IMDB Puani: {film.Score}");
+                Console.WriteLine($"Film: {movie.Name}, IMDB Puani: {movie.Score}");
             }
         }
 
-        static void ShowByScoreRange(List<Film> films, double firstScore, double secondScore)
+        // method that lists movies by score within a specified range
+        static void ShowByScoreRange(List<Movie> movies, double firstScore, double secondScore)
         {
             Console.WriteLine($"IMDB Puan araligi {firstScore}-{secondScore} olan filmler:");
-            foreach (var film in films)
+            foreach (var movie in movies)
             {
-                if (firstScore <= film.Score && film.Score <= secondScore)
+                if (firstScore <= movie.Score && movie.Score <= secondScore)
                 {
-                    Console.WriteLine($"Film: {film.Name}, IMDB Puani: {film.Score}");
+                    Console.WriteLine($"Film: {movie.Name}, IMDB Puani: {movie.Score}");
                 }
             }
         }
 
-        static void ShowByFirstLetter(List<Film> films, string letter)
+        // method that lists movies starting with the specified letter
+        static void ShowByFirstLetter(List<Movie> movies, string letter)
         {
             Console.WriteLine($"Film ismi {letter} ile başlayanlar:");
-            foreach (var film in films)
+            foreach (var movie in movies)
             {
-                if (film.Name.ToLower().StartsWith(letter, StringComparison.OrdinalIgnoreCase))
+                if (movie.Name.ToLower().StartsWith(letter, StringComparison.OrdinalIgnoreCase))
                 {
-                    Console.WriteLine($"Film: {film.Name}, IMDB Puani: {film.Score}");
+                    Console.WriteLine($"Film: {movie.Name}, IMDB Puani: {movie.Score}");
                 }
             }
         }
