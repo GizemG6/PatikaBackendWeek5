@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lists1", "Lists1\Lists1.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lists2", "Lists2\Lists2.csproj", "{A682A1D0-2A87-4AA8-8450-DE0249FDF5B5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDBList", "IMDBList\IMDBList.csproj", "{74FBA88E-D031-4F99-AB52-CB55114DE9C8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{A682A1D0-2A87-4AA8-8450-DE0249FDF5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A682A1D0-2A87-4AA8-8450-DE0249FDF5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A682A1D0-2A87-4AA8-8450-DE0249FDF5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74FBA88E-D031-4F99-AB52-CB55114DE9C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74FBA88E-D031-4F99-AB52-CB55114DE9C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74FBA88E-D031-4F99-AB52-CB55114DE9C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74FBA88E-D031-4F99-AB52-CB55114DE9C8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
