@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMDBList", "IMDBList\IMDBLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatch", "TryCatch\TryCatch.csproj", "{8DA18277-1559-43A8-85CC-4C4B350D7715}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Final", "Final\Final.csproj", "{38202D42-3EBE-4495-86E0-665E3985C8E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8DA18277-1559-43A8-85CC-4C4B350D7715}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DA18277-1559-43A8-85CC-4C4B350D7715}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DA18277-1559-43A8-85CC-4C4B350D7715}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38202D42-3EBE-4495-86E0-665E3985C8E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38202D42-3EBE-4495-86E0-665E3985C8E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38202D42-3EBE-4495-86E0-665E3985C8E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38202D42-3EBE-4495-86E0-665E3985C8E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
