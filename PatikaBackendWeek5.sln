@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Array", "Array\Array.csproj", "{ACC5D2F1-057A-44A0-92E8-2DC40F36A588}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Array", "Array\Array.csproj", "{ACC5D2F1-057A-44A0-92E8-2DC40F36A588}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lists1", "Lists1\Lists1.csproj", "{A55DBEC2-87CC-4493-8F9F-4C58B3610C37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lists1", "Lists1\Lists1.csproj", "{A55DBEC2-87CC-4493-8F9F-4C58B3610C37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lists2", "Lists2\Lists2.csproj", "{A682A1D0-2A87-4AA8-8450-DE0249FDF5B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lists2", "Lists2\Lists2.csproj", "{A682A1D0-2A87-4AA8-8450-DE0249FDF5B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMDBList", "IMDBList\IMDBList.csproj", "{74FBA88E-D031-4F99-AB52-CB55114DE9C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IMDBList", "IMDBList\IMDBList.csproj", "{74FBA88E-D031-4F99-AB52-CB55114DE9C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TryCatch", "TryCatch\TryCatch.csproj", "{8DA18277-1559-43A8-85CC-4C4B350D7715}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{74FBA88E-D031-4F99-AB52-CB55114DE9C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74FBA88E-D031-4F99-AB52-CB55114DE9C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74FBA88E-D031-4F99-AB52-CB55114DE9C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA18277-1559-43A8-85CC-4C4B350D7715}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA18277-1559-43A8-85CC-4C4B350D7715}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA18277-1559-43A8-85CC-4C4B350D7715}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA18277-1559-43A8-85CC-4C4B350D7715}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
